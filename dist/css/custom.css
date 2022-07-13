@@ -1,0 +1,137 @@
+.sidebar-nav #sidebarnav .sidebar-item.selected>.sidebar-link {
+    border-radius: 0 60px 60px 0;
+    color: #fff!important;
+    background: linear-gradient(to right,#EC0879,#EC0879,#7574ea,#6a75e9,#5f76e8) !important;
+    box-shadow: 0 7px 12px 0 rgb(95 118 232 / 21%);
+    opacity: 1;
+}
+
+.validation{
+    font-size: 12px;
+    color: red;
+}
+
+.has-error{
+    border-color: red;
+}
+
+.has-success{
+    border-color: green;
+}
+
+.total_c{
+    font-size: 21px; font-weight:bold; text-align: right; color:#5f76e8;
+}
+
+.actionicon{color: #EC0879;}
+
+.header_row{
+    margin-bottom: 21px; border-bottom: 3px solid #EC0879; padding-bottom: 22px;
+    width: 99%;
+    margin-left: .5%;
+}
+
+/* .left-sidebar {
+    width: 200px !important;
+}    
+
+.navbar-header {
+    width: 200px !important;
+} */
+
+.card-body {
+    flex: 1 1 auto;
+    /* padding: 25px 2px !important; */
+}
+
+#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link, #main-wrapper[data-layout=horizontal] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link {
+    color: #000;
+    font-size: 14px;
+}
+
+.page-wrapper>.container-fluid {
+    padding: 14px;
+    /* min-height: calc(100vh - 210px); */
+}
+
+
+.meal_type{display: block;}
+
+.small_gm{
+    text-transform: none;
+    font-weight: 400;
+    color: #e76363;
+    font-size: 10px;
+}
+.trheading{
+  background: #e2e2e2;
+}
+
+.trheading{
+    background: #e2e2e2;
+    font-size: 16px;
+      font-weight: bold;
+      padding: 11px;
+      margin: 0;
+  }
+
+.user-view, .user-view a {
+    /* margin: 7px auto; */
+    padding: 1px 4px !important;
+    border-radius: 3px!important;
+    font-size: 12px;
+}
+
+.setGoal{
+    margin: 5px 0;
+    padding: 0;
+    /* background: #FFB6C1; */
+    /* border: 1px solid #e98c9a; */
+    font-size: 12px;
+    color: #e93a68!important;
+}
+
+.action_col{
+    width: 50%;
+    padding: 3px 3px!important;
+    background: #ccc;
+    color: #0d0c0c;
+    padding-left: 20px !important;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+}
+.action_col_data{
+    padding: 3px!important;
+    background: #e8e9e9;
+    padding-left: 15 !important;
+}
+
+.smal{
+    color: #EC0879;
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+
+.newCalorieData{
+    width: 35% !important;
+    padding: 2px!important;
+    border-radius: 4px!important;
+    box-shadow: none !important;
+    font-size: 11px !important;
+    border: 0px solid #000 !important;
+}
+
+.dietPlan_goal_daye{
+    padding: 0 0 10px 0;
+    margin: 12px;
+}
+
+.dietPlan_goal_daye li{
+    margin-top: 6px;
+    list-style: none;
+    font-size: 13px;;
+}
+
+.dietPlan_goal_daye li label{font-size: 14px;}
