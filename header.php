@@ -27,6 +27,7 @@ require_once "db.php";
     <link rel="stylesheet" type="text/css" href="dist/css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="dist/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/dibates.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-analytics.css">
@@ -495,4 +496,42 @@ require_once "db.php";
                 <!-- ============================================================== -->
                 <!-- End Right sidebar -->
                 <!-- ============================================================== -->
- 
+
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <!-- ============================================================== -->
+                    <!-- Start Page Content -->
+                    <!-- ============================================================== -->
+
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo (isset($addnewpatient)) ? 'active' : '' ?>" aria-current="page" href="addnewpatient.php">Personal Details</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo (isset($medical_history)) ? 'active' : '' ?> " href="medical_history.php">Medical History</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo (isset($dietary_history)) ? 'active' : '' ?> " href="dietary_history.php">Dietary History</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo (isset($lifestyle)) ? 'active' : '' ?>" href="lifestyle.php" tabindex="-1" aria-disabled="true">Life Style</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link <?php echo (isset($family_history)) ? 'active' : '' ?>" href="family_history.php">Family History</a>
+                                        </li>
+
+                                    </ul>

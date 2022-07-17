@@ -50,6 +50,7 @@
            <!-- Bootstrap tether Core JavaScript -->
            <!-- <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script> -->
            <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
            <!-- apps -->
            <!-- <script src="dist/js/app.min.js"></script> -->
            <!-- <script src="dist/js/app.init-menusidebar.js"></script> -->

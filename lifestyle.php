@@ -1,44 +1,11 @@
 <?php
+$lifestyle = true;
 require_once "header.php";
+
 ?>
 
-<!-- ============================================================== -->
-<!-- Bread crumb and right sidebar toggle -->
-<!-- ============================================================== -->
 
-<!-- ============================================================== -->
-<!-- End Bread crumb and right sidebar toggle -->
-<!-- ============================================================== -->
-<!-- ============================================================== -->
-<!-- Container fluid  -->
-<!-- ============================================================== -->
-<div class="container-fluid">
-    <!-- ============================================================== -->
-    <!-- Start Page Content -->
-    <!-- ============================================================== -->
-
-    <div class="row">
-
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Personal Details</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Medical History</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Lifestyle</button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">profile</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">contact</div>
-                    </div>
-
+    
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12" id="medical_insurance_provider_ids">
                         <span style="color: #e93a68; font-weight: 700; font-size: 15px;">Diabetes Awareness and Lifestyle</span>
                     </div>
@@ -137,68 +104,13 @@ require_once "header.php";
 
                                 <input type="number" class="form-control form_input" autocomplete="off" name="minutes_of_exc" id="medical_insurance_provider" placeholder="How many minutes do you usually exercise">
                             </div>
-                            <div class="col-md-4 form-group mt-2">
-                                <label class="mb-3" style="font-weight: bold;" for="">Dietary history <small>(write down everything you ate in the 24 hours (prior to the appointment better is 2-3 days food diary
-                                        worth of meals and snack)</small></label>
-                                <div class="form-group" id="medical_insurance_provider_ids">
-                                    <label for="residing_in">EARLY MORNING : 8:00 am</label>
-                                    <span class="span_error" id="error_medical_insurance_provider"></span>
-
-                                    <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                                     id="medical_insurance_provider" placeholder="EARLY MORNING"> -->
-                                    <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="early_morning" rows="2" placeholder="EARLY MORNING"></textarea>
-                                </div>
-                            </div>
-                            <div style="margin-top:75px ;" class="col-md-4 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">BREAKFAST : 10:00 am</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                        id="medical_insurance_provider" placeholder="BREAKFAST"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="breakfast" rows="2" placeholder="BREAKFAST"></textarea>
-                            </div>
-                            <div style="margin-top:75px;" class="col-md-4 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">MID –MORNING : 11am</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                                id="medical_insurance_provider" placeholder="MID –MORNING"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="mid_morning" rows="2" placeholder="MID –MORNING"></textarea>
-
-                            </div>
+                 
                             <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">LUNCH 1:00pm</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                        id="medical_insurance_provider" placeholder="LUNCH"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="lunch" rows="2" placeholder="LUNCH"></textarea>
-                            </div>
-                            <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">EVENING SNACK:4:00 – 4:30 pm</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                                id="medical_insurance_provider" placeholder="EVENING SNACK"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="evening_snack" rows="2" placeholder="EVENING SNACK"></textarea>
-
-                            </div>
-                            <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">DINNER : 8:00 pm-8:30 pm</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                                id="medical_insurance_provider" placeholder="DINNER"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="dinner" rows="2" placeholder="DINNER"></textarea>
-                            </div>
-                            <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
-                                <label for="residing_in">Bed time</label>
-                                <span class="span_error" id="error_medical_insurance_provider"></span>
-                                <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
-                                                  id="medical_insurance_provider" placeholder="Bed time"> -->
-                                <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="bed_time" rows="2" placeholder="Bed time"></textarea>
-                            </div>
-                            <div class="col-md-4 form-group" id="medical_insurance_provider_ids">
                                 <label for="residing_in">Total water intake/day. <small>(Lit /Day)</small></label>
                                 <span class="span_error" id="error_medical_insurance_provider"></span>
                                 <input type="number" class="form-control form_input" autocomplete="off" name="water_intake" id="medical_insurance_provider" placeholder=" Lit /Day ">
                             </div>
-                            <div class=" col-md-4 form-group ">
+                            <div class=" col-md-3 form-group ">
                                 <label for="">Constipation ?</label>
                                 <div class=" form-check">
                                     <input name="constipation" value="Yes" class="form-check-input" type="radio" id="flexRadioDefault25">
@@ -213,7 +125,7 @@ require_once "header.php";
                                     </label>
                                 </div>
                             </div>
-                            <div class="col-md-4 form-group" id="medical_insurance_provider_ids">
+                            <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
                                 <label for="residing_in">How often do you eat out? <small>(per/week)</small></label>
                                 <span class="span_error" id="error_medical_insurance_provider"></span>
                                 <input type="number" class="form-control form_input" autocomplete="off" name="eat_out" id="medical_insurance_provider" placeholder="How often do you eat out">
@@ -223,14 +135,14 @@ require_once "header.php";
                                 <span class="span_error" id="error_medical_insurance_provider"></span>
                                 <input type="number" class="form-control form_input" autocomplete="off" name="sleeping_hours" id="medical_insurance_provider" placeholder="Hours /Day ">
                             </div>
-                            <div class="col-md-3 form-group" id="medical_insurance_provider_ids">
+                            <div class="col-md-4 form-group" id="medical_insurance_provider_ids">
                                 <label for="residing_in">Identify trouble spots like skipping breakfast or late night snacking.</label>
                                 <span class="span_error" id="error_medical_insurance_provider"></span>
                                 <!-- <input type="text" class="form-control form_input" autocomplete="off" name="medical_insurance_provider"
                                                   id="medical_insurance_provider" placeholder="if yes Then Frequency "> -->
                                 <textarea id="address_ids" autocomplete="off" class="form-control form_input" name="trouble_spots" rows="2" placeholder="if yes Then Frequency "></textarea>
                             </div>
-                            <div class="col-md-3 form-group mt-3" id="medical_insurance_provider_ids">
+                            <div class="col-md-4 form-group mt-3" id="medical_insurance_provider_ids">
                                 <label for="residing_in">Smoking. <small>(if they do?)</small></label>
                                 <select name="smoking" class="form-control">
                                     <option value="">Smoking </option>
@@ -241,7 +153,7 @@ require_once "header.php";
 
                                 </select>
                             </div>
-                            <div class="col-md-3 form-group mt-3" id="medical_insurance_provider_ids">
+                            <div class="col-md-4 form-group mt-3" id="medical_insurance_provider_ids">
                                 <label for="residing_in">Drinking <small>(if they do?)</small></label>
                                 <select name="drinking" class="form-control">
                                     <option value="">Drinking </option>
@@ -306,5 +218,5 @@ require_once "header.php";
 <!-- End Right sidebar -->
 <!-- ============================================================== -->
 <?php
-require_once "footer.php"
+require_once "footer.php";
 ?>
